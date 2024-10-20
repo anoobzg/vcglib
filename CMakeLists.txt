@@ -2,6 +2,9 @@
 # Copyright 2019, 2021, Visual Computing Lab, ISTI - Italian National Research Council
 # SPDX-License-Identifier: BSL-1.0
 
+# define vcglib target
+# define VCG_INCLUDE_DIR
+
 cmake_minimum_required(VERSION 3.10)
 project(VCGLib)
 
@@ -16,6 +19,8 @@ option(VCG_USE_OPENMP "Allow VCG to find and link OpenMP if detected" ON)
 
 set (VCG_INCLUDE_DIRS ${CMAKE_CURRENT_LIST_DIR})
 set (VCG_INCLUDE_DIRS ${CMAKE_CURRENT_LIST_DIR} PARENT_SCOPE)
+set (VCG_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR})
+set (VCG_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR} PARENT_SCOPE)
 
 ### Build settings
 set(CMAKE_CXX_STANDARD 11)
